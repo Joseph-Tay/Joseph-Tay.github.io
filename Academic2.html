@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="font-awesome-5.7.2/css/all.css">
+    <title>Joseph Tay</title>
+    <link rel="shortcut icon" href="pics/favicon.ico" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+        body{
+          margin:0 auto;
+          padding:2px;
+          padding-top:50px;
+          background-image: url("pics/background3.jpg");
+        	background-repeat: no-repeat;
+        	background-position: center center;
+        	background-attachment: fixed;
+        	-webkit-background-size: cover;
+        	-moz-background-size: cover;
+        	-o-background-size: cover;
+        	background-size: cover;
+        }
+        header {
+          position: relative;
+          /* background-image: url("pics/background2.jpg");
+          background-repeat: no-repeat;
+          background-size: auto; */
+          background: rgba(255,255,255,0.8);
+          height:230px;
+          width:1080px;
+          margin:0 auto;
+          border: 1px solid black;
+          /* border-collapse: collapse; */
+          border-radius:10px;
+          z-index:98;
+        }
+        nav {
+          position:absolute;
+          /* display: inline; */
+          /* margin:0 auto; */
+          line-height:50px;
+          background-color:none;
+           /* height:50px;  */
+          width:1080px;
+          /* float:left; */
+          /* padding: 5px 15px; */
+          /* border: 3px solid black; */
+          font-size: 30px;
+          font-family: "Arial";
+          list-style-type: none;
+          vertical-align: middle;
+          z-index: 99;
+          border-radius:10px;
+          bottom:0;
+        }
+
+        section {
+          position:relative;
+          width:1020px;
+          height:2100px;
+          /* float:left; */
+          /* margin:0 auto; */
+          padding:30px;
+          color:black;
+          text-shadow:none;
+          background: rgba(255,255,255,0.4);
+          border: 3px solid black;
+          font-family:"trebuchet ms";
+          font-size:16px;
+          line-height: 25px;
+          border-radius:25px;
+          top: 50%;
+          left: 50%;
+          margin-right: -50%;
+          transform: translate(-50%)
+        }
+        footer {
+            background-color:none;
+            color:Black;
+            clear:both;
+            text-align:center;
+            padding:10px;
+        }
+        h1{
+          font-size:30px;
+          font-weight:bold;
+          text-align:left;
+          line-height: 10px;
+        }
+        .centered {
+        	width:1000px;
+        	margin:0 auto;
+        	border-collapse: collapse;
+        	align: left;
+        }
+        /* .headcenter {
+          width:800px;
+          margin:0 auto;
+          border: 1px solid black;
+          border-collapse: collapse;
+          align: left;
+        } */
+        /* .headerBg {
+            position: absolute;
+            height:120px;
+            width:800px;
+        } */
+        .profile{
+          display: block;
+          margin:none;
+          padding-right: 10px;
+          padding-left: 0px;
+          padding-bottom: 0px;
+          position:left;
+          height: 180px;
+          width: 145px;
+          border-radius:10px;
+          float:left;
+        }
+        .navpic{
+          display: block;
+          margin:auto;
+          border: 2px solid darkblue;
+          padding: 3px;
+          border-radius:50%;
+          position:center;
+          height: 163px;
+          width: 133px
+        }
+        div nav {
+          top: 50%;
+          left: 50%;
+          margin-right: -50%;
+          transform: translate(-50%)
+        }
+        li a{
+          display:inline;
+          float:left;
+          margin:0;
+          padding:0;
+          width:180px;
+          height:50px;
+          background-color:none;
+          color: black;
+          /* padding: 8px 12px; */
+          text-decoration: none;
+          text-align: center;
+          vertical-align: middle;
+          border-radius:10px;
+        }
+        li a.active{
+          background-color:#555;
+          color:white;
+          border-radius:10px;
+        }
+        li a:hover:not(.active) {
+          background-color:grey;
+          color:white;
+          border-radius:10px;
+        }
+        .h3{
+          font-size:20px;
+          font-weight:bold;
+          text-align:left;
+          line-height: 25px;
+        }
+        p.name{
+          top:0;
+          padding-left:165px;
+          line-height:25px;
+          font-size:45px;
+          font-family:"Verdana";
+          color: rgba(0,0,0,1);
+          text-align:center;
+          /* text-shadow:1px 1px black; */
+        }
+        p.contact{
+          padding-left:165px;
+          text-align:center;
+          font-size:25px;
+          font-family:"arial";
+          line-height:25px;
+        }
+        li a.course{
+          color: #000;
+          text-decoration: none;
+        }
+        .desc{
+          font-size: 14px;
+          font-style: italic;
+          line-height: 20px;
+          margin-left: 10px;
+          margin-right: 20px;
+        }
+  </style>
+</head>
+
+<body>
+    <header>
+<img src="pics/profile.jpg" class="profile">
+
+<p class="name">
+  Joseph Tay
+</p>
+<p class="contact">
+  Industrial Engineer | <a href="mailto:joseph.tqy@gmail.com" style="color:black; text-decoration: none;">joseph.tqy@gmail.com</a> | Irvine, CA 92614
+</p>
+
+<nav>
+    <li><a href="index.html"><i class="fa fa-user-alt"></i></a></li>
+    <li><a class="active" href="Academic2.html"><i class="fa fa-graduation-cap"></i></a></li>
+    <li><a href="Profexp2.html"><i class="fa fa-briefcase"></i></a></li>
+    <li><a href="Achievements2.html"><i class="fa fa-trophy"></i></a></li>
+    <li><a href="skills2.html"><i class="fa fa-cogs"></i></a></li>
+    <li><a href="contact2.html"><i class="fa fa-envelope-open-text"></i></a></li>
+</nav>
+    </header>
+<div>
+    <!-- <nav>
+      </br><img src="pics/profile.jpg" class="navpic"></br>
+        <li><a href="index.html">About Me</a></li>
+        <li><a href="AcademicBg.html">Academic Background</a></li>
+        <li><a class="active" href="Profexp.html">Professional Experience</a></li>
+        <li><a href="Achievements.html">Achievements</a></li>
+        <li><a href="skills.html">Skillset</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </nav> -->
+  <section class="centered;">
+    <h1><i class="fa fa-graduation-cap"></i> Academic Background</h1><hr color="black" size="2">
+  </br>
+        <div style="display:inline-block; padding-left:20px;">
+        <img style="float: left; padding-bottom:10px;" src="pics/purdue_logo.png" height="100px"></div></br>
+        <div style="padding-left:20px;"><span style="font-size:25px; line-height:25px; font-weight:bold;">BS Industrial Engineering</span>
+        <span style='float:right'><i>2012 ~ 2016</i></span></br>
+        <B>Minors:</B> Economics | Statistics</br></br></div>
+
+<!--Start Purdue Projects-->
+        <div style="padding-left:20px;"><span class="h3">IE431 Senior Design Project</span>
+        </br>
+        Fewell Monument | Production Planning System Design</br></div>
+        <ul style="list-style-type:circle">
+          <li>Partnered with Fewell Monument in Scottsburg, IN to analyze their inability to fulfil customer demand for custom-built products</li>
+          <li>Formulated predictive model using data from time studies based on determinable scales and metrics common to all headstones.</li>
+          <li>Tested predictive model against historical data, using regression analysis to increase effectiveness of model.</li>
+          <li>Provided a way to forecast the production time of a product to give accurate deadlines, reducing the number of late orders fulfilled.</li>
+        </ul></br>
+        <div style="padding-left:20px;"><span class="h3">IE332 Capstone Design Project</span>
+        </br>
+        "Wine Company" | IT Infrastructure Redesign</br></div>
+        <ul style="list-style-type:circle">
+          <li>Developed website for simulated wine company's intranet webpage using HTML/CSS.</li>
+          <li>Constructed optimal sales model and workflow using Arena Software to determine best allocation of resources.</li>
+          <li>Utilized MySQL to develop and query a database of sales and business strategy metrics for easy compilation.</li>
+          <li>Generated method to forecast future sales by using R statistical package to analyze queried metrics.</li>
+          <li>Designed floor plan for optimum throughput rate of consumers and products using AutoCAD.</li>
+        </ul></br>
+<!--End Purdue Projects-->
+        <hr color="black" size="0">
+        <div style="padding-left:20px;" class="h3"><u>Industrial Engineering Major Coursework:</u></div>
+          <ul style="list-style-type:circle">
+              <li><c title="Click for course description." onmouseover="style='cursor:pointer;'" onclick="Disp('ie230')">Probability and Statistics in Engineering I (IE230)</c></li>
+                  <c class="desc" id="ie230" style="display:none">An introduction to probability and statistics. Probability and probability distributions. Mathematical expectation. Functions of random variables. Estimation. Applications oriented to engineering problems.</c>
+
+              <li><c title="Click for course description. " onmouseover="style='cursor:pointer;'" onclick="Disp('ie330')">Probability and Statistics in Engineering II (IE330)</c></li>
+                  <c class="desc" id="ie330" style="display:none"> Introduction to statistical inference and experimental design. Correlation,regression, single and multi-factor ANOVA, non-parametric methods. Applications to statistical quality control.</c>
+
+              <li><c title="Click for course description." onmouseover="style='cursor:pointer;'" onclick="Disp('ie332')">Computing in Industrial Engineering (IE332)</c></li>
+                  <c class="desc" id="ie332" style="display:none"> Introduction to computing in industrial engineering. Reinforcement of scientific programming skills on typical IE tasks, together with introduction to simulation and related computer tools. </c>
+
+              <li><c title="Click for course description. " onmouseover="style='cursor:pointer;'" onclick="Disp('ie335')">Operations Research - Optimization (IE335)</c></li>
+                  <c class="desc" id="ie335" style="display:none">Introduction to deterministic optimization modeling and algorithms in operations research. Emphasis on formulation and solution of linear programs, networks flows, and integer programs. </c>
+
+              <li><c title="Click for course description. " onmouseover="style='cursor:pointer;'" onclick="Disp('ie336')">Operations Research - Stochastic Models (IE336)</c></li>
+                  <c class="desc" id="ie336" style="display:none">Introduction to probablistic models in operations research. Emphasis on Markov chains, Poisson processes, and their application to queueing systems. </c>
+
+              <li><c title="Click for course description." onmouseover="style='cursor:pointer;'" onclick="Disp('ie343')">Engineering Economics (IE343)</c></li>
+                  <c class="desc" id="ie343" style="display:none" >Cost measurement and control in engineering studies. Basic accounting concepts, income measurement, and valuation problems. Manufacturing cost control and standard cost systems. Capital investment, engineering alternatives, and equipment replacement studies</c>
+
+              <li><c title="Click for course description. " onmouseover="style='cursor:pointer;'" onclick="Disp('ie370')">Manufacturing Processes I (IE370)</c></li>
+                  <c class="desc" id="ie370" style="display:none">Principal manufacturing processes; metal cutting, grinding and metal forming operations, machine tools, and tools and tooling. Nontraditional machining and welding. Introduction to computer-aided manufacturing and computer-aided graphics and design, N/C programming, robots, and flexible manufacturing systems. </c>
+
+              <li><c title="Click for course description." onmouseover="style='cursor:pointer;'" onclick="Disp('ie386')">Work Analysis and Design I (IE386)</c></li>
+                  <c class="desc" id="ie386" style="display:none">Fundamentals of work methods and measurement. Applications of engineering, psychological, and physiological principles to the analysis and design of human work systems.</c>
+
+              <li><c title="Click for course description." onmouseover="style='cursor:pointer;'" onclick="Disp('ie383')">Integrated Production Systems I (IE383)</c></li>
+                  <c class="desc" id="ie383" style="display:none" >Basic concepts in the design and operational control of integrated production systems. Includes topics on facility layout and material handling, material flow and information flow, resource and capacity planning, and shop floor control and scheduling. </c>
+
+              <li><c title="Click for course description." onmouseover="style='cursor:pointer;'" onclick="Disp('ie474')">Industrial Control Systems (IE474)</c></li>
+                  <c class="desc" id="ie474" style="display:none">Introduction to automatic controls with reference to automation of industrial machines and processes, including linear dynamic systems, feedback control, and elements of systems analysis. Introduction to digital control. </c>
+
+              <li><c title="Click for course description." onmouseover="style='cursor:pointer;'" onclick="Disp('ie486')">Work Analysis and Design II (IE486)</c></li>
+                  <c class="desc" id="ie486" style="display:none" >Applications of engineering, computer sciences, information sciences, and psychological principles and methods to the analysis and design of human work systems. </c>
+
+              <li><c title="Click for course description." onmouseover="style='cursor:pointer;'" onclick="Disp('ie484')">Integrated Production Systems II (IE484)</c></li>
+                  <c class="desc" id="ie484" style="display:none">Extensions of topics on the design and operational control of integrated production systems. Includes production databases, facility layout, material handling, advanced control and scheduling, and physical distribution. </c>
+
+              <li><c title="Click for course description." onmouseover="style='cursor:pointer;'" onclick="Disp('ie431')">Industrial Engineering Design "Senior Design"(IE431)</c></li>
+                  <c class="desc" id="ie431" style="display:none">Capstone design experience for industrial engineering students involving analysis and synthesis of unstructured problems in practical settings. Students work in teams to formulate issues, propose solutions, and communicate results in formal written and oral presentations.</c>
+
+          </ul></br>
+
+        <div style="padding-left:20px;" class="h3"><u>Economics Minor Coursework:</u></div>
+          <ul style="list-style-type:circle">
+
+              <li><c title="Click for course description." onmouseover="style='cursor:pointer;'" onclick="Disp('econ201')">Intro to Microeconomics (ECON201)</c></li>
+                  <c class="desc" id="econ201" style="display:none" > Microeconomics studies the choices individuals make and the incentives that influence those choices. Emphasis is on the incentives that determine market prices and resource allocation. The role of public policy in influencing incentives and efficiency is also addressed</c>
+
+              <li><c title="Click for course description." onmouseover="style='cursor:pointer;'" onclick="Disp('econ252')">Macroeconomics (ECON252)</c></li>
+                  <c class="desc" id="econ252" style="display:none" >Introduction to macroeconomic theory. The course develops a theoretical framework permitting an analysis of the forces affecting national income, employment, interest rates, and the rate of inflation. Emphasis is placed upon the role of government fiscal and monetary policy in promoting economic growth and stable prices. </c>
+
+              <li><c title="Click for course description." onmouseover="style='cursor:pointer;'" onclick="Disp('econ352')">Intermediate Macroeconomics(ECON352)</c></li>
+                  <c class="desc" id="econ352" style="display:none">Continuation of ECON 25200. A more rigorous, general equilibrium treatment of macroeconomic theory with emphasis on the components of the model: determinants of consumption, investment, net exports and foreign exchange rates, the level of unemployment, inflation and the long-run rate of economic growth.</c>
+
+              <li><c title="Click for course description." onmouseover="style='cursor:pointer;'" onclick="Disp('econ451')">Game Theory (ECON451)</c></li>
+                  <c class="desc" id="econ451" style="display:none" >In the course, economic, political, and social interactions are represented as games, in which strategies and resulting outcomes can be analyzed. The analysis of these interactions is then used to demonstrate how one can make optimal decisions under uncertainty.</c>
+
+              <li><c title="Click for course description." onmouseover="style='cursor:pointer;'" onclick="Disp('econ461')">Industrial Organization (ECON461)</c></li>
+                  <c class="desc" id="econ461" style="display:none">This course examines the determinants of firm and market structure and the resulting market performance in imperfectly-competitive markets. Advanced topics include advertising, research and development, imperfectly competitive international markets, and market integration. Emphasis is placed on using theoretical models of firm and industry behavior to explain and analyze real-world examples of firm behavior. </c>
+          </ul></br>
+
+        <div style="padding-left:20px;" class="h3"><u>Statistics Minor Coursework:</u></div>
+        <ul style="list-style-type:circle">
+
+        <li><c title="Click for course description." onmouseover="style='cursor:pointer;'" onclick="Disp('stat512')">Applied Regression Analysis (STAT512)</c></li>
+            <c class="desc" id="stat512" style="display:none">Inference in simple and multiple linear regression, residual analysis, transformations, polynomial regression, model building with real data, nonlinear regression. One-way and two-way analysis of variance, multiple comparisons, fixed and random factors, analysis of covariance. </c>
+
+        <li><c title="Click for course description." onmouseover="style='cursor:pointer;'" onclick="Disp('stat514')">Design of Experiments (STAT514)</c></li>
+            <c class="desc" id="stat514" style="display:none">Fundamentals, completely randomized design; randomized complete blocks; latin square; multiclassification; factorial; nested factorial; incomplete block and fractional replications for 2n, 3n, 2m x 3n; confounding; lattice designs; general mixed factorials; split plot; analysis of variance in regression models; optimum design.</c>
+
+        <li><c title="Click for course description." onmouseover="style='cursor:pointer;'" onclick="Disp('ie530')">Quality Control (IE530)</c></li>
+            <c class="desc" id="ie530" style="display:none">Principles and practices of statistical quality control in industry. Control charts for measurements and for attributes. Acceptance sampling by attributes and by measurements. Standard sampling plans. Sequential analysis. Sampling inspection of continuous production. </c>
+        </ul></br>
+
+        <div style="padding-left:20px;" class="h3"><u>Other Coursework / Electives</u></div>
+        <ul style="list-style-type:circle">
+          <li>Sketching, Visualization & Communication (CGT112)</li>
+          <li>Geometric Modelling & Communication (CGT114)</li>
+          <li>Human Relations in Organizations (OLS252)</li>
+          <li>Elementary Honors Composition (ENGW140)</li>
+          <li>Fundamentals of Speech (COMM114)</li>
+          <li>Analytical Geometry and Calculus I (MATH165)</li>
+          <li>Analytical Geometry and Calculus II (MATH166)</li>
+          <li>Multivariate Calculus (MATH261)</li>
+          <li>Linear Algebra (MATH265)</li>
+          <li>Ordinary Differential Equations (MATH266)</li>
+          <li>Programming Applications for Engineers (CS159)</li>
+          <li>Electricity and Optics (PHYS241)</li>
+          <li>Linear Circuit Analysis I (ECE201)</li>
+          <li>Thermodynamics I (ME200)</li>
+          <li>Basic Mechanics I (ME270)</li>
+          <li>Mechanics of Materials I (NUCL273)</li>
+          <li>Elementary Psychology (PSY120)</li>
+        </ul>
+
+</section>
+</div>
+<script>
+    function Disp(x){
+      el = document.getElementById(x);
+      if (el.style.display === 'none' ){
+        var cls = document.getElementsByClassName("desc");
+        var i;
+        for (i = 0; i < cls.length; i++) {
+          cls[i].style.display = "none";
+        }
+        el.style.display = 'block';
+      }else{
+        el.style.display = 'none';
+      }
+    }
+</script>
+    <footer> Source code by Joseph Q Tay &copy; 2016<script>new Date().getFullYear()>2016&&document.write("-"+new Date().getFullYear());</script>.</footer>
+</body>
+</html>
