@@ -5,6 +5,26 @@
     <title>Joseph Tay</title>
     <link rel="shortcut icon" href="pics/favicon.ico" type="image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+    function validateForm(){
+        var x = document.forms["mygform"]["entry.2005620554"].value;
+        var y = document.forms["mygform"]["entry.1045781291"].value;
+        var z = document.forms["mygform"]["entry.1065046570"].value;
+        if (x == "") {
+          alert("Please provide a name");
+          } else if(y == ""){
+          alert("Please provide an e-mail address");
+        } else if(z == ""){
+          alert("Please tell me what organization are you from");
+        } else{
+          alert("Thank you for leaving your contact information! I will respond to you soon!");
+          document.getElementById("mygform").reset();
+        }
+        return false;
+    }
+    </script>
+
   <style>
         body{
           margin:0 auto;
@@ -113,7 +133,7 @@
           position:left;
           height: 180px;
           width: 145px;
-          border-radius:10px;
+          border-top-left-radius:10px;
           float:left;
         }
         .navpic{
@@ -200,14 +220,14 @@
 </head>
 
 <body>
-    <header>
+<header>
 <img src="pics/profile.jpg" class="profile">
 
 <p class="name">
   Joseph Tay
 </p>
 <p class="contact">
-  Industrial Engineer | <a href="mailto:joseph.tqy@gmail.com" style="color:black; text-decoration: none;">joseph.tqy@gmail.com</a> | Irvine, CA 92614
+  Industrial Engineer | Irvine, California
 </p>
 
 <nav>
@@ -218,7 +238,7 @@
     <li><a href="skills2.html"><i class="fa fa-cogs"></i></a></li>
     <li><a class="active" href="contact2.html"><i class="fa fa-envelope-open-text"></i></a></li>
 </nav>
-    </header>
+</header>
 <div>
     <!-- <nav>
       </br><img src="pics/profile.jpg" class="navpic"></br>
@@ -233,8 +253,24 @@
     <h1><i class="fa fa-envelope-open-text"></i>&nbsp Let's Connect</h1><hr color="black" size="2"></br>
 
 <a href="Joseph_Tay_Resume.pdf" style="text-decoration:none; float:left; display:inline-block;padding-right: 80px;"><div style="font-size:30px; color:Black;"><b><i class="fa fa-scroll"></i> Resume</b></div></a></li>
-<a href="https://www.linkedin.com/in/joseph-tay-047bab105/" target="_blank" style="text-decoration:none; display:inline-block;"><div style="font-size:30px; color:black;"><b><i class="fab fa-linkedin"></i> LinkedIn</b></div></a></li></br></br></br>
+<a href="https://www.linkedin.com/in/joseph-tay-047bab105/" target="_blank" style="text-decoration:none; display:inline-block;padding-right: 80px;"><div style="font-size:30px; color:black;"><b><i class="fab fa-linkedin"></i> LinkedIn</b></div></a></li>
+<a href="mailto:joseph.tqy@gmail.com" target="_blank" style="text-decoration:none; display:inline-block;"><div style="font-size:30px; color:black;"><b><i class="fa fa-envelope-square"></i> E-Mail</b></div></a></li>
+</br></br>
+<hr color="black" size="2">
 </br>
+<div style="font-size:20px; color:black;"><b><i class="fa fa-pen-square"></i> You can also leave your contact information here!</b></div>
+</br>
+<form name="mygform" id="mygform" enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLSfenEHC7PmTlerAcLEqYO4IP-S6K8kOcEFjFJij0_Ei7H0ptQ/formResponse?usp=pp_url" target="hidden_iframe" onsubmit="return validateForm()" method="post" style="font-size:15px; color: black;"><b>
+  <div style="display:inline-block;">Name: <input type="text" name="entry.2005620554" id="entry.2005620554" maxlength="25"></div>
+  <div style="display:inline-block;padding-left:10px">E-mail Address: <input type="text" name="entry.1045781291" id="entry.1045781291" size="21" maxlength="50"></div>
+  <div style="display:inline-block;padding-left:10px">Organization:  <input type="text" name="entry.1065046570" id="entry.1065046570" size="22" maxlength="30"></div><br>
+  <div style="padding-top:10px;padding-left:3px;"><textarea name="entry.839337160" id="entry.839337160"style="resize:none; font-family:arial;" placeholder="Additional Comments (optional)" rows="5" cols="115" maxlength="500" resize="none"></textarea></div>
+  <button type="submit" id="submit"><i class="fa fa-pen-square"></i>Send</button>
+</b>
+</form>
+<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
+
+</br></br>
 <B>Thanks for visiting! <i class="far fa-smile-beam"></i></B>
 </section>
 </div>

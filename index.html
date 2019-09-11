@@ -5,6 +5,20 @@
     <title>Joseph Tay</title>
     <link rel="shortcut icon" href="pics/favicon.ico" type="image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+function greetingfunc() {
+  var hour = new Date().getHours();
+  var greeting;
+  if (hour < 12) {
+    greeting = "Good Morning and welcome to my personal website!";
+  } else if (hour < 18) {
+    greeting = "Good Afternoon and welcome to my personal website!";
+  } else{
+    greeting = "Good Evening and welcome to my personal website!";
+  }
+  document.getElementById("greet").innerHTML = greeting;
+  }
+</script>
   <style>
         body{
           margin:0 auto;
@@ -113,7 +127,7 @@
           position:left;
           height: 180px;
           width: 145px;
-          border-radius:10px;
+          border-top-left-radius:10px;
           float:left;
         }
         .navpic{
@@ -183,7 +197,7 @@
   </style>
 </head>
 
-<body>
+<body onload="greetingfunc()">
     <header>
 <img src="pics/profile.jpg" class="profile">
 
@@ -191,7 +205,7 @@
   Joseph Tay
 </p>
 <p class="contact">
-  Industrial Engineer | <a href="mailto:joseph.tqy@gmail.com" style="color:black; text-decoration: none;">joseph.tqy@gmail.com</a> | Irvine, CA 92614
+  Industrial Engineer | Irvine, California
 </p>
 
 <nav>
@@ -214,11 +228,11 @@
         <li><a href="contact.html">Contact</a></li>
     </nav> -->
   <section class="centered;">
-    <span style="display:inline;"><h1><i class="fa fa-user"></i><i> "Opportunities don't happen. You create them." </i></h1></span><hr color="black" size="2px"></br>
-      Hello, My name is Joseph Tay and welcome to my webpage! </br></br>
-      I have always been fascinated with experiencing different cultures and different places, an interest which has enticed me to experience education in Singapore, Australia and the United States. </br></br>
+    <span style="display:inline;"><h1><i class="fa fa-user"></i><i> “In the middle of difficulty lies opportunity.” </i></h1></span><hr color="black" size="2px">
+      <b id="greet"></b></br>
+      <b>I have always been fascinated with experiencing different cultures and different places, an interest which has brought me across the globe to experience education in Singapore, Australia and the United States. </br></br>
       My interest in optimization and operations research has taken me from leadership positions in the Singapore Armed Forces to pursuing a Bachelor's Degree in Industrial Engineering, with minors in Statistics and Economics.</br>
-    </br>You can use the menu above to navigate through more information about me. This entire website was made from scratch using HTML/CSS, while the Header was done in Adobe Photoshop. It is still a work in progress and is being updated constantly everyday.
+    </br>You can use the menu above to navigate through more information about me. This entire website was made from scratch using HTML/CSS, while the Header was done in Adobe Photoshop. It is still a work in progress and is being updated constantly everyday.</b>
 
 
 </section>
