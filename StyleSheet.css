@@ -46,9 +46,6 @@ nav {
 section {
   position:static;
   height:auto;
-  width:90%;
-  max-width:1020px;
-  min-width:200px;
   padding:30px;
   color:black;
   text-shadow:none;
@@ -74,13 +71,13 @@ h1{
   text-align:left;
   line-height: 40px;
 }
-<!-- .centered {
-  width:auto;
+div.content{
+  width:90%;
+  max-width:1080px;
+  min-width:200px;
   margin:0 auto;
-  border-collapse: collapse;
-  align: left;
-  line-height:40px;
-} -->
+}
+
 .profile{
   display: block;
   margin:none;
@@ -132,23 +129,33 @@ nav li a:hover:not(.active) {
   line-height: 25px;
 }
 p.name{
-  top:0;
-  padding-left:165px;
   line-height:25px;
   font-size:5vmin;
   font-family:"Verdana";
   color: rgba(0,0,0,1);
   text-align:center;
-  /* text-shadow:1px 1px black; */
 }
-p.contact{
-  padding-left:165px;
+p.person{
   text-align:center;
   font-size:2.5vmin;
   font-family:"arial";
   line-height:25px;
 }
-
+.contactme{
+  width:70%;
+  height:auto;
+  padding-top:10px;
+  padding-left:3px;
+  display:inline-block;
+  padding-right:5px;
+  margin-bottom:200px;
+  float:left;
+}
+.contactmetextarea{
+  width:100%;
+  margin-bottom:1000px;
+  float:left;
+}
 ul li a.ignore-css:hover{color:darkgreen;}
 
 li a.course{
@@ -162,13 +169,18 @@ li a.course{
   margin-left: 10px;
   margin-right: 20px;
 }
+.achdesc{
+  font-size: 14px;
+  line-height: 20px;
+
+}
 
 .clear{
   clear:both;
 }
 span.stuff{
   display:inline-block;
-  width:40%;
+  width:30%;
   align-self: left;
 }
 span.bar{
@@ -187,8 +199,8 @@ span.soft{
     padding-left:10px;
 }
 .contactpage {
-  height: calc(42vh);
-  min-height:520px;
+  height: auto;
+  min-height:100px;
   margin:0 auto;
   border-collapse: collapse;
   align: left;
@@ -197,4 +209,9 @@ textarea{
   width:  calc(50vw - 20px);      /* calc and viewport to the rescue */
   height: auto;
   resize: none;
+}
+.checked{
+  /* color:#1976D2; */
+  color:#0086b3;
+  -webkit-text-stroke:1px black;
 }
