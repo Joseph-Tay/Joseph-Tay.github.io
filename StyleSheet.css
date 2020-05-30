@@ -215,3 +215,43 @@ textarea{
   color:#0086b3;
   -webkit-text-stroke:1px black;
 }
+
+a.Link{
+  font-size:30px;
+  color:Black;
+  border-radius:10px;
+  text-decoration:none;
+  float:left;
+  display:inline-block;
+  padding-right: 80px;
+  padding-top:10px;
+}
+#resumelink:hover{
+  color:#1E851E;
+}
+#emaillink:hover{
+  color:#D44638;
+}
+#linkedinlink:hover{
+  color:#0e76a8;
+}
+#gitlink:hover{
+  color:#6e5494;
+}
+#submitbut:hover{
+  color:black;
+  background-color:orange;
+}
+.submitbutton{
+  height:66px;
+  width:65px;
+  text-align:middle;
+  vertical-align:middle;
+  margin-top:10px;
+  font-size:30px;
+  color:white;
+  background-color:#555;
+  border-radius:8px;
+  border-style:outset;
+  border-color:black;
+}
