@@ -90,6 +90,16 @@ div.content{
   border-top-left-radius:10px;
   float:left;
 }
+.demogif{
+  display: block;
+  margin:auto;
+  padding-right: 10px;
+  padding-left: 0px;
+  padding-bottom: 0px;
+  position:left;
+  height: 50vmin;
+  
+}
 div nav {
   position: static;
   top: 50%;
@@ -110,7 +120,7 @@ nav li a {
   text-align: center;
   vertical-align: middle;
   border-radius:10px;
-  transition-duration:0.5s;
+  transition-duration:0.7s;
 }
 nav li a.active{
   background-color:#555;
@@ -157,7 +167,8 @@ p.person{
   margin-bottom:1000px;
   float:left;
 }
-ul li a.ignore-css:hover{color:darkgreen;}
+ul li a.ignore-css:hover{border-style:outset; border-width:1px; transition-duration: 0.2s;}
+ul li a.ignore-css {padding:3px; border-radius:10px;text-decoration:none; color:rgb(8, 136, 153);transition-duration: 0.5s;}
 
 li a.course{
   color: #000;
@@ -170,10 +181,18 @@ li a.course{
   margin-left: 10px;
   margin-right: 20px;
 }
+ul li c.desctitle:hover{
+  cursor:pointer; 
+  color:white;
+  transition-duration:0.5s;
+} 
+ul li c.desctitle{
+  transition-duration:0.5s;
+} 
 .achdesc{
   font-size: 14px;
   line-height: 20px;
-
+  font-weight:normal;
 }
 
 .clear{
@@ -204,7 +223,6 @@ span.soft{
   min-height:100px;
   margin:0 auto;
   border-collapse: collapse;
-  align: left;
 }
 textarea{
   width:  calc(50vw - 20px);      /* calc and viewport to the rescue */
