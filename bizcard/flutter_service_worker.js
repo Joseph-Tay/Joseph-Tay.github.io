@@ -4,32 +4,32 @@ const TEMP = 'flutter-temp-cache';
 const CACHE_NAME = 'flutter-app-cache';
 const RESOURCES = {
   "version.json": "3bf86ea78c6f2275fa66b4fd712f3bc7",
-"index.html": "d9f91f891f2527d6b83585a52eb1fdd8",
+"bizcard/index.html": "d9f91f891f2527d6b83585a52eb1fdd8",
 "/": "d9f91f891f2527d6b83585a52eb1fdd8",
-"main.dart.js": "d3e4916518f3fee9f7f28490322f384f",
-"favicon.png": "5dcef449791fa27946b3d35ad8803796",
-"icons/Icon-192.png": "ac9a721a12bbc803b44f645561ecb1e1",
-"icons/Icon-512.png": "96e752610906ba2a93c65f8abe1645f1",
-"manifest.json": "6c1202162bedcf7375f951291ddccdef",
-"assets/images/jtay.jpg": "28485d7478f7fb5c0a8c3555b10ec998",
-"assets/AssetManifest.json": "95fd5a894278140164416137cbc85562",
-"assets/NOTICES": "9847efe0678f1a49dc03b757f761c9aa",
-"assets/FontManifest.json": "7885c174ce8c50b8faa582c87ba563c2",
-"assets/packages/cupertino_icons/assets/CupertinoIcons.ttf": "115e937bb829a890521f72d2e664b632",
-"assets/fonts/BreeSerif-Regular.ttf": "14aaff013398c35430cc935d1e4dcd99",
-"assets/fonts/RobotoMono-Regular.ttf": "b4618f1f7f4cee0ac09873fcc5a966f9",
-"assets/fonts/MaterialIcons-Regular.otf": "1288c9e28052e028aba623321f7826ac"
+"bizcard/main.dart.js": "d3e4916518f3fee9f7f28490322f384f",
+"bizcard/favicon.png": "5dcef449791fa27946b3d35ad8803796",
+"bizcard/icons/Icon-192.png": "ac9a721a12bbc803b44f645561ecb1e1",
+"bizcard/icons/Icon-512.png": "96e752610906ba2a93c65f8abe1645f1",
+"bizcard/manifest.json": "6c1202162bedcf7375f951291ddccdef",
+"bizcard/assets/images/jtay.jpg": "28485d7478f7fb5c0a8c3555b10ec998",
+"bizcard/assets/AssetManifest.json": "95fd5a894278140164416137cbc85562",
+"bizcard/assets/NOTICES": "9847efe0678f1a49dc03b757f761c9aa",
+"bizcard/assets/FontManifest.json": "7885c174ce8c50b8faa582c87ba563c2",
+"bizcard/assets/packages/cupertino_icons/assets/CupertinoIcons.ttf": "115e937bb829a890521f72d2e664b632",
+"bizcard/assets/fonts/BreeSerif-Regular.ttf": "14aaff013398c35430cc935d1e4dcd99",
+"bizcard/assets/fonts/RobotoMono-Regular.ttf": "b4618f1f7f4cee0ac09873fcc5a966f9",
+"bizcard/assets/fonts/MaterialIcons-Regular.otf": "1288c9e28052e028aba623321f7826ac"
 };
 
 // The application shell files that are downloaded before a service worker can
 // start.
 const CORE = [
   "/",
-"main.dart.js",
-"index.html",
-"assets/NOTICES",
-"assets/AssetManifest.json",
-"assets/FontManifest.json"];
+"bizcard/main.dart.js",
+"bizcard/index.html",
+"bizcard/assets/NOTICES",
+"bizcard/assets/AssetManifest.json",
+"bizcard/assets/FontManifest.json"];
 // During install, the TEMP cache is populated with the application shell files.
 self.addEventListener("install", (event) => {
   self.skipWaiting();
