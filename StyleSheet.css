@@ -243,22 +243,33 @@ a.Link{
   display:inline-block;
   padding-right: 80px;
   padding-top:10px;
+  transition-duration:1.5s;
 }
 #resumelink:hover{
   color:#1E851E;
 }
 #emaillink:hover{
   color:#D44638;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #69221b;
+  transition-duration:1s;
 }
 #linkedinlink:hover{
   color:#0e76a8;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #063b53;
+  transition-duration:1s;
 }
 #gitlink:hover{
   color:#6e5494;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #3b2d50;
+  transition-duration:1s;
 }
 #submitbut:hover{
   color:black;
   background-color:orange;
+  transition-duration:1s;
 }
 .submitbutton{
   height:66px;
@@ -272,4 +283,5 @@ a.Link{
   border-radius:8px;
   border-style:outset;
   border-color:black;
+  transition-duration:1.5s;
 }
