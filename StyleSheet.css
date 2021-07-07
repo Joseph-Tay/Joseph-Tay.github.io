@@ -157,7 +157,6 @@ p.person{
   height:auto;
   padding-top:10px;
   padding-left:3px;
-  display:inline-block;
   padding-right:5px;
   margin-bottom:200px;
   float:left;
@@ -272,7 +271,7 @@ a.Link{
   transition-duration:1s;
 }
 .submitbutton{
-  height:66px;
+  height:58px;
   width:65px;
   text-align:middle;
   vertical-align:middle;
