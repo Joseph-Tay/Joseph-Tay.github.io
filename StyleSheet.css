@@ -66,8 +66,8 @@ section {
   width:90%;
 
   font-family:"trebuchet ms";
-  font-size:clamp(10px, 1.5vw, 25px);
-  line-height: 4vmin;
+  font-size:clamp(10px, 1.95vmin, 25px);
+  line-height: 3vmin;
   border-radius:25px;
   margin:0 auto;
 
@@ -81,11 +81,11 @@ footer {
     padding:10px;
 }
 h1{
-  font-size:clamp(15px, 2.5vw, 35px);
+  font-size:clamp(15px, 2.5vmin, 35px);
   font-weight:bold;
   text-align:left;
   max-height:150px;
-  line-height:2.5vw;
+  line-height:2.5vmin;
 
 }
 div.content{
