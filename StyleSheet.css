@@ -2,7 +2,7 @@ body{
   margin:0 auto;
   padding:2px;
   padding-top:50px;
-  background-image: url("pics/background3.jpg");
+  background-image: url("SupportFiles/pics/background3.jpg");
   background-repeat: no-repeat;
   background-position: center center;
   background-attachment: fixed;
@@ -10,66 +10,82 @@ body{
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  transition-duration:0.25s;
+
 }
 header {
-  position:static;
-  background: rgba(255,255,255,0.8);
+  position:fixed;
+  background: rgba(255,255,255,0.95);
   max-height:530px;
-  min-height:100px;
+
   height:auto;
-  width:90%;
-  max-width:1080px;
+  width:98%;
+  
   min-width:200px;
-  vertical-align: middle;
+  top: 5px;
+  left:0;
+  right:0;
   margin:0 auto;
   border: 1px solid black;
-  border-radius:10px;
+  border-radius:12px;
   z-index:98;
 }
 nav {
-  position:static;
-  line-height:50px;
+  box-shadow: inset 0 0 0 1px black;
+  line-height:5vmin ;
   background-color:none;
   width:100%;
   min-width:95%;
-  max-width:1080px;
-  height: 50px;
+
+  height: calc(5vmin + 1px);
   font-size: 4vmin;
   font-family: "Arial";
   list-style-type: none;
-  vertical-align: middle;
+  border-bottom-left-radius:10px;
+  border-bottom-right-radius:10px;
   z-index: 99;
-  border-radius:10px;
+position:absolute;
   bottom:0;
 }
 
+nav li:first-child a {
+  border-bottom-left-radius: 10px; /* Apply border radius to the bottom left corner of the first option */
+}
+
+nav li:last-child a {
+  border-bottom-right-radius: 10px; /* Apply border radius to the bottom right corner of the last option */
+}
 section {
+
   position:static;
   height:auto;
-  padding:30px;
+  padding-top:15vmin;
   color:black;
   text-shadow:none;
-  background: rgba(255,255,255,0.4);
-  border: 3px solid black;
+  width:90%;
+
   font-family:"trebuchet ms";
-  font-size:16px;
-  line-height: 25px;
+  font-size:clamp(10px, 1.5vw, 25px);
+  line-height: 2.5vmin;
   border-radius:25px;
   margin:0 auto;
 
 }
 footer {
-    background-color:none;
+
+  background-color:none;
     color:Black;
     clear:both;
     text-align:center;
     padding:10px;
 }
 h1{
-  font-size:30px;
+  font-size:clamp(15px, 2.5vw, 35px);
   font-weight:bold;
   text-align:left;
-  line-height: 40px;
+  max-height:150px;
+  line-height:2.5vw;
+
 }
 div.content{
   width:90%;
@@ -80,12 +96,12 @@ div.content{
 
 .profile{
   display: block;
-  margin:none;
-  padding-right: 10px;
+  margin-right:20px;
+  margin-bottom:5vmin;
   padding-left: 0px;
   padding-bottom: 0px;
   position:left;
-  height: 18vmin;
+  height: 14vmin;
   max-height:162px;
   border-top-left-radius:10px;
   float:left;
@@ -100,57 +116,58 @@ div.content{
   height: 50vmin;
   
 }
-div nav {
-  position: static;
-  top: 50%;
-  left: 50%;
-  max-width: 1080px;
-  min-width: 200px;
-  width:auto;
-}
+
 nav li a {
   float:left;
   margin:0;
   padding:0;
-  width:16.666666666666666%;
-  height:50px;
+  width:20%;
+  height: 5vmin;
   background-color:none;
   color: black;
   text-decoration: none;
   text-align: center;
   vertical-align: middle;
-  border-radius:10px;
-  transition-duration:0.7s;
+
+  font-size:75%;
 }
-nav li a.active{
-  background-color:#555;
-  color:white;
-  border-radius:10px;
-}
-nav li a:hover:not(.active) {
-  background-color:grey;
-  color:white;
-  border-radius:10px;
+
+nav li a:hover {
+  background-color:rgb(188, 196, 211);
+  transition-duration:0.6s;
+  box-shadow: inset 0 0 0 1px black;
+  text-shadow: 0px 1px #000000
+
 }
 
 .h3{
-  font-size:20px;
+  font-size:2vmin;
   font-weight:bold;
   text-align:left;
   line-height: 25px;
 }
 p.name{
-  line-height:25px;
+
   font-size:5vmin;
   font-family:"Verdana";
   color: rgba(0,0,0,1);
-  text-align:center;
+  text-align:left;
+  width:100%;
+  margin-top:3vmin;
+  max-height:100px;
+  max-width:100%;
+  align-items:center;
 }
 p.person{
-  text-align:center;
-  font-size:2.5vmin;
-  font-family:"arial";
-  line-height:25px;
+
+  font-size:6vmin;
+  font-family:"Verdana";
+  color: rgba(0,0,0,1);
+  text-align:left;
+  width:100%;
+  margin-top:3vmin;
+
+  align-items:center;
 }
 .contactme{
   width:70%;
@@ -166,8 +183,8 @@ p.person{
   margin-bottom:1000px;
   float:left;
 }
-ul li a.ignore-css:hover{border-style:outset; border-width:1px; transition-duration: 0.2s;}
-ul li a.ignore-css {padding:3px; border-radius:10px;text-decoration:none; color:rgb(8, 136, 153);transition-duration: 0.5s;}
+ul li a.ignore-css:hover{cursor:help; border-style:outset; border-width:1px; transition-duration: 0.1s;}
+ul li a.ignore-css {padding:3px; border-radius:10px;text-decoration:none; color:rgb(8, 136, 153);transition-duration: 0.2s;}
 
 li a.course{
   color: #000;
@@ -235,52 +252,36 @@ textarea{
 }
 
 a.Link{
-  font-size:30px;
+  font-size:6vmin;
   color:Black;
   border-radius:10px;
   text-decoration:none;
-  display:inline-block;
-  padding-right: 80px;
-  padding-top:10px;
-  transition-duration:1.5s;
+  position: relative;
+  display: inline-block;
+  margin-left:1vw;
+  margin-right:1vw;
 }
-#resumelink:hover{
-  color:#1E851E;
-}
-#emaillink:hover{
+
+#emaillink{
   color:#D44638;
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: #69221b;
-  transition-duration:1s;
+
+
 }
-#linkedinlink:hover{
+#linkedinlink{
   color:#0e76a8;
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: #063b53;
-  transition-duration:1s;
 }
-#gitlink:hover{
+
+
+
+#gitlink{
   color:#6e5494;
+
+
+}
+#reslink{
+  color:hsl(0, 0%, 80%);
+  -webkit-text-stroke: #000;
   -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: #3b2d50;
-  transition-duration:1s;
+
 }
-#submitbut:hover{
-  color:black;
-  background-color:orange;
-  transition-duration:1s;
-}
-.submitbutton{
-  height:58px;
-  width:65px;
-  text-align:middle;
-  vertical-align:middle;
-  margin-top:10px;
-  font-size:30px;
-  color:white;
-  background-color:#555;
-  border-radius:8px;
-  border-style:outset;
-  border-color:black;
-  transition-duration:1.5s;
-}
+
