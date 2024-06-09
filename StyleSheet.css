@@ -81,7 +81,7 @@ footer {
     padding:10px;
 }
 h1{
-  font-size:clamp(5px, 3.5vmin, 30px);
+  font-size:clamp(25px, 3.5vmin, 30px);
   font-weight:bold;
   text-align:left;
   max-height:150px;
@@ -142,14 +142,14 @@ nav li a:hover {
 }
 
 .h3{
-  font-size:2vmin;
+  font-size:clamp(17px,2vmin,35px);
   font-weight:bold;
   text-align:left;
   line-height: 25px;
 }
 p.name{
 
-  font-size:5vmin;
+  font-size:clamp(35px,5vmin,40px);
   font-family:"Verdana";
   color: rgba(0,0,0,1);
   text-align:left;

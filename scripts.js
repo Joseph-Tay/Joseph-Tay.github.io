@@ -56,3 +56,12 @@ function thisyear() {
         }
       }
 
+      function togglePDF(event) {
+        event.preventDefault(); // Prevent the default behavior of the anchor tag
+        var pdfEmbed = document.getElementById("pdfEmbed");
+        if (pdfEmbed.style.display === "none") {
+            pdfEmbed.style.display = "block";
+        } else {
+            pdfEmbed.style.display = "none";
+        }
+    }
