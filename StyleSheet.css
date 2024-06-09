@@ -67,7 +67,7 @@ section {
 
   font-family:"trebuchet ms";
   font-size:clamp(10px, 1.5vw, 25px);
-  line-height: 2.5vmin;
+  line-height: 4vmin;
   border-radius:25px;
   margin:0 auto;
 
