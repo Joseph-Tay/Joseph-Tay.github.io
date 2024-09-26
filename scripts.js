@@ -39,6 +39,8 @@ function greetingfunc() {
 function thisyear() {
     var year = new Date().getFullYear();
     document.getElementById("year").textContent = year;
+    var yearcalc = year-2016;
+    document.getElementById("yearcalc").textContent = yearcalc;
     }
 
 
