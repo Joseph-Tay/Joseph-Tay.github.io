@@ -1,15 +1,19 @@
 function showPage(pageId) {
-
-    var pages = document.querySelectorAll('.page');
-    for (var i = 0; i < pages.length; i++) {
-        if (pages[i].id === pageId) {
-            pages[i].style.display = 'block';
-        } else {
-            pages[i].style.display = 'none';
-        }
-    }
-
-
+  var pages = document.querySelectorAll('.page');
+  pages.forEach(page => {
+      if (page.id === pageId) {
+          page.style.display = 'block';
+          page.offsetHeight; // Force a reflow
+          setTimeout(() => {
+              page.style.opacity = '1';
+          }, 250);
+      } else {
+          page.style.opacity = '0';
+          setTimeout(() => {
+              page.style.display = 'none';
+          }, 250);
+      }
+  });
 }
 
 
